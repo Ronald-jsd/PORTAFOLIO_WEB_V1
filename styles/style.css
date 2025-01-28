@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Declaración de variables */
+:root{
+    --color-primario: #021526;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #8cbfe6;
+    --color-texto: #ffffff;
+  
+    --color-hover: #272727;
+    --border-hover: #F6F6F6;
+    --shadow-hover: #c8dfcf 1px 0px 9px;
+  
+    --fuente-montserrat: 'Montserrat', sans serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+body.light-mode {
+    --color-primario: #ffffff;
+    --color-secundario: #021526;
+    --color-terciario: #6ea2c9;
+    --color-texto: #000000;
+
+    --color-hover: #e6d5d576;
+    --border-hover: #e8e1e1;
+    --shadow-hover: #071bed 1px 0px 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+/* boton del tema */
+.presentacion_tema{
+    display: flex;
+    justify-content: end;
+}
+.tema-color{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none; 
+}
+
+.icon {
+    fill: var(--color-secundario);
+    height: 2.1rem;
+    filter: drop-shadow(rgba(255, 255, 255, 0.81) 0px 5px 10px );
+}
+#sun-icon{
+    color: white;
+}
+
+#moon-icon{
+    color: #000000;
+}
+
+/* ocultar la luna */
+.hidden {
+    display: none;
+}
+/* --- */
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.header_menu_link:hover{
+    color: var(--color-secundario);
+    transition: all 0.4s;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 15%;
+    gap: 82px;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+    font-weight: 400;
+}
+
+.titulo-destaque{
+    color: var(--color-terciario);
+}
+
+.presentacion_contenido_parrafo{
+    font-size: 1.2rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion_contenido_parrafo a{
+    text-decoration: none;
+    color: #22D4FD;
+}
+
+.presentacion_enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_enlaces_subtitulo{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion_enlaces_link{
+    width: 50%;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    text-align: center;
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.presentacion_enlaces_link:hover{
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+    border: 2px solid var(--border-hover);
+    box-shadow: var(--shadow-hover);
+    transition: all 0.2s;
+}
+ 
+
+.presentacion_imagen{
+    width: 30%;
+    filter: drop-shadow(10px 10px 10px black);
+    border-radius: 5%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.4rem;
+}
+
+
+.container{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* a partir de menos de 1200 */
+@media (max-width: 1200px ){
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+
+    .header_menu_link{
+        font-size: 100%;
+    }
+
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion_contenido{
+        width: auto;
+    }
+
+    .tema-color{
+        margin-bottom: 5px;
+    }
+
+}

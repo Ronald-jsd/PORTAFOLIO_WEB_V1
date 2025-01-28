@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <div class=" presentacion_tema">
+            <!-- boton del tema -->
+            <button id="theme-toggle" class="tema-color" >
+                <svg id="sun-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 30"  >
+                    <circle cx="15" cy="15" r="6" fill="currentColor" />
+                    <line
+                    id="ray"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    x1="15"
+                    y1="1"
+                    x2="15"
+                    y2="4"
+                    ></line>
+                
+                    <use href="#ray" transform="rotate(45 15 15)" />
+                    <use href="#ray" transform="rotate(90 15 15)" />
+                    <use href="#ray" transform="rotate(135 15 15)" />
+                    <use href="#ray" transform="rotate(180 15 15)" />
+                    <use href="#ray" transform="rotate(225 15 15)" />
+                    <use href="#ray" transform="rotate(270 15 15)" />
+                    <use href="#ray" transform="rotate(315 15 15)" />
+                </svg>
+
+                <!-- <svg id="sun-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.75a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 01.75-.75zM17.305 6.695a.75.75 0 011.06 0l1.06 1.06a.75.75 0 11-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zM19.25 11.25a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 01.75-.75zM17.305 17.305a.75.75 0 011.06 0l1.06 1.06a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zM12 17.5a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5a.75.75 0 01.75-.75zM6.695 17.305a.75.75 0 010 1.06l-1.06 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zM4.75 12a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5h-1.5a.75.75 0 01-.75-.75zM6.695 6.695a.75.75 0 010 1.06L5.635 8.815a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zM12 9.25a2.75 2.75 0 100 5.5 2.75 2.75 0 000-5.5z"/></svg> -->
+                <svg id="moon-icon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 30" fill="currentColor">
+                    <path d=
+                    "M 23, 5
+                    A 12 12 0 1 0 23, 25
+                    A 12 12 0 0 1 23, 5"
+                    />
+                </svg>
+            </button>
+        </div>
+        <!--  -->
+        <nav class="header_menu">
+            <a class="header_menu_link" href="index.html">Home</a>
+            <a class="header_menu_link" href="about.html">Sobre mí</a>
+            <a class="header_menu_link" href="curriculo.html">Curriculum</a>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+            <h1 class="presentacion_contenido_titulo">Eleve tu negocio digital a otro nivel <strong class="titulo-destaque">con un Front-end de calidad!</strong></h1>
+            <p class="presentacion_contenido_parrafo">Hola! Soy Ronald Jaime, desarrollador Back-end con especialización en Java, .NET y SQL. 
+                </p>
+            <div class="presentacion_enlaces">
+            <h2 class="presentacion_enlaces_subtitulo">Accede a mis redes:</h2>
+            <a href="https://www.linkedin.com/in/ronaldjaimeduran/" class="presentacion_enlaces_link"> <img src="./assets/linkedin.png" alt="">LinkedIn</a>
+            <a href="https://github.com/Ronald-jsd" class="presentacion_enlaces_link"><img src="./assets/github.png" alt=""> Github</a>
+            </div>
+        </section>
+
+            <img class="presentacion_imagen"  src="./img/presentacion_img.jpg" alt="Imagen Trabajando" >
+    
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Ronald Santiago</p>
+    </footer>
+</div>
+
+   
+<script src="script.js"></script>
+</body>
+</html>
